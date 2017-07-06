@@ -211,9 +211,8 @@ async.parallel({
 							console.error(err);
 
 							msg = `<div class="content-bg">
-									<br/><br/>
-									<img src="/assets/ASEAN_LOGO_bird.png"  class="aseanbird-img img-responsive center-block"/>
-									<img src="/assets/ASEAN_LOGO_50.png"  class="asean50-img img-responsive center-block"/>
+									<br/><br/><br/><br/>
+									<img src="/assets/ASEAN_logo_V3.png"  class="aseanv3-img img-responsive center-block"/>
 									<br/><br/><br/><br/><br/><br/>
 									<img src="/assets/headshot_empty.gif" class="photo center-block" />
 									<br/><br/>
@@ -224,8 +223,7 @@ async.parallel({
 						else if (process.env.DEPLOYMENT === 'departure') {
 							msg = `<div class="content-bg">
 									<br/><br/><br/><br/><br/><br/>
-									<img src="/assets/ASEAN_LOGO_bird.png"  class="aseanbird-img img-responsive center-block"/>
-									<img src="/assets/ASEAN_LOGO_50.png"  class="asean50-img img-responsive center-block"/>
+									<img src="/assets/ASEAN_logo_V3.png"  class="aseanv3-img img-responsive center-block"/>
 									<br/><br/><br/><br/><br/><br/>
 									<br/><br/><br/><br/><br/><br/>
 									<h1 class="participant" style="font-size: 100px; ">THANK YOU</h1>
@@ -239,10 +237,9 @@ async.parallel({
 						// If record is found and authorized for the current meeting, show the participant info
 						else if (!isEmpty(participant) && (includes(meetings, currentMeeting) || includes(meetings, '0'))) {
 							msg = `<div class="content-bg">
-									<br/>
-									<img src="/assets/ASEAN_LOGO_bird.png"  class="aseanbird-img img-responsive center-block"/>
-									<img src="/assets/ASEAN_LOGO_50.png"  class="asean50-img img-responsive center-block"/>
-									<br/>
+									<br/><br/><br/><br/>
+									<img src="/assets/ASEAN_logo_V3.png"  class="aseanv3-img img-responsive center-block"/>
+									<br/><br/>
 									<h1 class="greet" style="font-size: 170px; ">Welcome</h1>
 									<br/>									
 									<img src="data:;base64,${participant.id_photo}" class="photo center-block" />
@@ -257,9 +254,8 @@ async.parallel({
 						// Else show an avatart
 						else {
 							msg = `<div class="content-bg">
-									<br/><br/>
-									<img src="/assets/ASEAN_LOGO_bird.png"  class="aseanbird-img img-responsive center-block"/>
-									<img src="/assets/ASEAN_LOGO_50.png"  class="asean50-img img-responsive center-block"/>
+									<br/><br/><br/><br/>
+									<img src="/assets/ASEAN_logo_V3.png"  class="aseanv3-img img-responsive center-block"/>
 									<br/><br/><br/><br/><br/><br/>
 									<img src="/assets/headshot_empty.gif" class="photo center-block" />
 									<br/><br/>
